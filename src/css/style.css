@@ -10,3 +10,6 @@ body{margin:0}
 #b4{grid-area: nav4}
 main{margin-top: 40px}
 article{margin-left: 40px;margin-top: 60px;margin-right: 40px; margin-bottom: 30px}
+
+#logo:hover , #b1:hover , #b2:hover, #b3:hover , #b4:hover{background-color: yellow;color: gray; transition: background-color 0.7s ease}
+#logo , #b1 , #b2, #b3 , #b4 {transition: background-color 0.7s ease}
