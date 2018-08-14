@@ -1,0 +1,12 @@
+body{margin:0}
+
+.navBar{height: 40px;width:100vw;background-color: gainsboro;position: fixed;top:0;display:grid;grid-template-columns: 12vw 32vw 12vw 12vw 12vw 12vw 10vw;grid-template-areas: "logo empL nav1 nav2 nav3 nav4 empR" }
+.navBar li{list-style: none;line-height: 40px;text-align: center;font-size: 18px;text-transform: capitalize; font-family:  'Pacifico', cursive;}
+.navBar a {color: inherit; text-decoration: none}
+#logo{grid-area: logo}
+#b1{grid-area: nav1}
+#b2{grid-area: nav2}
+#b3{grid-area: nav3}
+#b4{grid-area: nav4}
+main{margin-top: 40px}
+article{margin-left: 40px;margin-top: 60px;margin-right: 40px; margin-bottom: 30px}
