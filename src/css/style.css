@@ -54,6 +54,16 @@ main{margin-top: 40px;height: auto}
 #prep1{grid-area: prep1}
 #ing2{grid-area: ing2}
 #prep2{grid-area: prep2}
+/* ######### article grid start for recipess*/
+.article-contact{line-height: 1.5 em;margin-left: 30px;margin-top: 10px; margin-bottom: 30px;width:calc(100vw - 150px);color:black;min-height: calc(80vh); display:grid;grid-template-columns: 1fr 1fr; grid-template-rows: auto 1fr; grid-template-areas: "contact1 contact1" "contact2 contact3" ; grid-column-gap: 50px}
+/* ######## article grid ends for recipes*/
+#contact1{grid-area: contact1}
+#contact2{grid-area: contact2;display:grid; grid-template-rows:auto 50%;grid-template-columns:100%; grid-template-areas: "contact2a" "contact2b"; grid-row-gap: 50px}
+#contact3{grid-area: contact3}
+#contact2a{grid-area: contact2a}
+#contact2b{grid-area: contact2b}
+
+
 
 
 
@@ -123,8 +133,37 @@ footer {
     grid-template-columns:33.3vw 33.3vw 33.3vw; 
     grid-template-areas: "social contact copyright"
 }
-footer h2{margin:0;color:black;font-family:'Pacifico', cursive;font-size: 16px}
+footer h2{margin:0;color:black;font-family:'Pacifico', cursive;font-size: 12px}
 
-footer li {list-style: none; font-size: 10px}
+footer li {list-style: none; font-size: 16px}
 
 /* <-----------------------FOOTER ENDS HERE */
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea , input[type=email] , input[type=tel] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: yellow;
+}
+
