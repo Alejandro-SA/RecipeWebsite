@@ -8,8 +8,60 @@ body{margin:0;background-image: url(background.jpg);background-size:cover; posit
 #b2{grid-area: nav2}
 #b3{grid-area: nav3}
 #b4{grid-area: nav4}
-main{margin-top: 40px;height: 80vh}
-.wrap{margin-left: 40px;margin-top: 60px;margin-right: 40px;  background-color: rgba(255, 255, 255, 0.6);border-radius: 20px; margin-bottom: 20px;min-height: calc(80vh);  }
-article{margin-left: 20px;margin-top: 10px; margin-bottom: 30px;width:calc(100vw - 120px);color:black;min-height: calc(80vh);}
+main{margin-top: 40px;height: auto}
+.wrap{margin-left: 40px;margin-top: 60px;margin-right: 40px;  background-color: rgba(255, 255, 255, 0.6);border-radius: 20px; margin-bottom: 20px;min-height: calc(80vh);    animation-name: a1; animation-duration: 1.5s;  }
+article{line-height: 1.5 em;margin-left: 20px;margin-top: 10px; margin-bottom: 30px;width:calc(100vw - 120px);color:black;min-height: calc(80vh); display:grid;grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr auto; grid-template-areas: "img1 img2 img3 " "text1 text1 tex1"}
 #logo:hover , #b1:hover , #b2:hover, #b3:hover , #b4:hover{background-color: yellow;color: gray; transition: background-color 0.7s ease}
 #logo , #b1 , #b2, #b3 , #b4 {transition: background-color 0.7s ease}
+
+
+
+article p img , .recipeImg  {width: 90%;  display: block;
+    margin-left:auto;
+    margin-right: auto; opacity: 0.9; border-radius: 20px;padding-top: 5px;padding-bottom: 5px; padding-left: 5px;padding-right: 5px}
+
+#recipe1, #fancy1 {grid-area: img1}
+#recipe2, #fancy2{grid-area: img2}
+#recipe3 , #fancy3 {grid-area: img3}
+#about{grid-area: text1;grid-column: 1 / 4}
+
+article p {text-align: center;}
+.text2{ animation-name: a3; animation-duration: 3s}
+@keyframes a1 {
+    0%{opacity:0;}
+    25% {opacity: 0;}
+    80% {opacity: 1;}
+}
+@keyframes a2 {
+    0%{opacity:0;}
+    30% {opacity: 0;}
+    100% {opacity: 0.8;}
+}
+
+@keyframes a3 {
+    0%{opacity:0;}
+    30% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes a4 {
+    0%{opacity:0;}
+    30% {opacity: 0;}
+    40% {opacity: 0.3;}
+    100% {opacity: 1;}
+}
+#about{animation-name: a3; animation-duration: 3s;}
+#fancy1 , #fancy2, #fancy3 {width: 82% ;background-color:gray;height: auto ;border-radius: 20px; opacity:.8;display: block;
+    margin-left: auto;
+    margin-top: auto;margin-right: auto; animation-name: a2; animation-duration: 2s;}
+
+h2 {text-align: center;font-family:'Pacifico', cursive; animation-name: a4; animation-duration: 2.5s; }
+
+footer {
+    height: 30px;
+    margin-top: 50px;
+    width: 100%;
+    background-color: yellow;
+    color: white;
+    text-align: center;
+}
