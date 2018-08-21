@@ -6,12 +6,40 @@
     <title>Recipe Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
-        <header>../
+        <header>
+                    <!-- Dropdown Mobile Navegation Bar #################START################### -->
+        <div id="Alex-DropDownNav">
+                <div id="dropDownWrap" class="hidden dropDownWrap">
+                        <div class="dropDownMenu" >
+                            <ul>
+                                    <li><a href="../index.html">Inicio</a></li>
+                                    <li><a href="../recetas/recetas.html">Recetas</a></li>
+                                    <li><a href="#">Carnes</a></li>   
+                                    <li><a href="#">Ensaladas</a> </li>
+                                    <li>  <a href="#">Postres</a> </li>
+                                    <li><a href="../contacto/contacto.html">Contacto</a></li>
+                                   <li><a href="../tuReceta/tuReceta.html">Sube tu receta</a></li>
+                            </ul>
+                        </div>
+                        <!-- starts navbar -->
+                        <div id="dropDownNav" class="dropDownNav">
+                            <div id="dropDownContainer">
+                                    <div id=AlexNavLogo>RecipeWebsite</div>
+                                <div id="dropDownButton"  onclick="openMenu()" class="dropdownB"><i class="fas fa-bars dropdownB"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ends navbar  -->
+                    </div>
+                </div>
+                    <!-- Dropdown Mobile Navegation Bar ##############END################# -->
+
+
                 <div class="navBar">    
                       <li id="logo"><a href="../index.html">Recipe Website</a></li>
                       <li id="b1"><a href="../index.html">Inicio</a></liid>
@@ -39,7 +67,7 @@
                         <div id="contact2a">
                             <img src="us.jpeg" style="width : 80%; border-radius: 15px; display:block;margin-left: auto; margin-right: auto;"  >
                     </div>
-                            <div id="contact2b>" style="padding-bottom:10px"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15494081.623418082!2d-73.83482412642334!3d25.793104559172868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89451ab5034cb7ab%3A0xb600ecf3df7aca4d!2sBermuda+Triangle!5e0!3m2!1sen!2smx!4v1534450580968" width="80%" height="450" frameborder="0" style="border:0; display:block;margin-left: auto; margin-right: auto; border-radius: 15px" allowfullscreen></iframe>
+                            <div id="contact2b>" style="padding-bottom:10px"> <iframe  id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15494081.623418082!2d-73.83482412642334!3d25.793104559172868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89451ab5034cb7ab%3A0xb600ecf3df7aca4d!2sBermuda+Triangle!5e0!3m2!1sen!2smx!4v1534450580968"  style="border:0; display:block;margin-left: auto; margin-right: auto; border-radius: 15px" allowfullscreen></iframe>
                             </div>
                     </div>
 
@@ -108,3 +136,4 @@
 
         </body>
         </html>
+

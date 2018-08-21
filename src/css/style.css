@@ -1,6 +1,6 @@
 body{margin:0;background-image: url(background.jpg);background-size:cover; position: static;   background-repeat: no-repeat; background-attachment: fixed;}
 /*################ navegation bar starts here */
-.navBar{height: 40px;width:100vw;background-color: gainsboro;position: fixed;top:0;display:grid;grid-template-columns: 12vw 32vw 12vw 12vw 12vw 12vw 10vw;grid-template-areas: "logo empL nav1 nav2 nav3 nav4 empR";z-index: 1; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); }
+.navBar{height: 45px;width:100vw;background-color: gainsboro;position: fixed;top:0;display:grid;grid-template-columns: 12vw 32vw 12vw 12vw 12vw 12vw 10vw;grid-template-areas: "logo empL nav1 nav2 nav3 nav4 empR";z-index: 1; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); }
 .navBar li{list-style: none;line-height: 40px;text-align: center;font-size: 18px;text-transform: capitalize; font-family:  'Pacifico', cursive;}
 .navBar a {color: inherit; text-decoration: none}
 #logo{grid-area: logo}
@@ -24,9 +24,9 @@ body{margin:0;background-image: url(background.jpg);background-size:cover; posit
 
 .dropdown-content {
 display: none;
+width: 12vw;
 position: absolute;
 background-color: #f9f9f9;
-width: 10vw;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 z-index: 1;
 }
@@ -40,7 +40,7 @@ display: block;
 
 
 
-main{margin-top: 40px;height: auto}
+main{margin-top: 40px;height: auto;width: 100%}
 .wrap{margin-left: 40px;margin-top: 60px;margin-right: 40px;  background-color: rgba(255, 255, 255, 0.6);border-radius: 20px; margin-bottom: 20px;min-height: calc(80vh);    animation-name: a1; animation-duration: 1.5s;  }
 
 /* ######### article grid starts for index*/
@@ -48,18 +48,19 @@ main{margin-top: 40px;height: auto}
 /* ######## article grid ends for index*/
 
 /* ######### article grid start for recipess*/
-.article-recipes{line-height: 1.5 em;margin-left: 30px;margin-top: 10px; margin-bottom: 30px;width:calc(100vw - 150px);color:black;min-height: calc(80vh); display:grid;grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; grid-template-areas: "ing1 prep1" "ing2 prep2" ; grid-column-gap: 50px}
+.article-recipes{line-height: 1.5 em;margin-left: 30px;margin-top: 10px; margin-bottom: 30px;width:calc(100%-40px);color:black; display:grid;grid-template-columns: calc(50% - 25px)  calc(50% - 25px); grid-template-rows: auto auto; grid-template-areas: "ing1 prep1" "ing2 prep2" ; grid-column-gap: 50px}
 /* ######## article grid ends for recipes*/
 #ing1{grid-area: ing1;display: grid; grid-template-columns: 50% 50%; align-items: center}
 #prep1{grid-area: prep1}
 #ing2{grid-area: ing2}
 #prep2{grid-area: prep2}
-/* ######### article grid start for recipess*/
-.article-contact{line-height: 1.5 em;margin-left: 30px;margin-top: 10px; margin-bottom: 30px;width:calc(100vw - 150px);color:black;min-height: calc(80vh); display:grid;grid-template-columns: 1fr 1fr; grid-template-rows: auto 1fr; grid-template-areas: "contact1 contact1" "contact2 contact3" ; grid-column-gap: 50px}
-/* ######## article grid ends for recipes*/
-#contact1{grid-area: contact1}
-#contact2{grid-area: contact2;display:grid; grid-template-rows:auto 50%;grid-template-columns:100%; grid-template-areas: "contact2a" "contact2b"; grid-row-gap: 50px}
-#contact3{grid-area: contact3}
+#ing1 img{width: 20vw}
+/* ######### article grid start for contacts*/
+.article-contact{line-height: 1.5 em;margin-left: 0px;margin-top: 10px; margin-bottom: 30px;width:calc(100vw - 150px);color:black;min-height: calc(80vh); display:grid;grid-template-columns: auto auto; grid-template-rows: auto auto; grid-template-areas: "contact1 contact1" "contact2 contact3" ; grid-column-gap: 50px}
+/* ######## article grid ends for contacts*/
+#contact1{grid-area: contact1; width: auto}
+#contact2{grid-area: contact2;display:grid; grid-template-rows:auto auto;grid-template-columns: auto; grid-template-areas: "contact2a" "contact2b"; grid-row-gap: 50px}
+#contact3{grid-area: contact3; display: grid}
 #contact2a{grid-area: contact2a}
 #contact2b{grid-area: contact2b}
 /* ######### article grid start for recipess*/
@@ -81,7 +82,7 @@ article p img , .recipeImg  {width: 90%;  display: block;
 #recipe1, #fancy1 {grid-area: img1;}
 #recipe2, #fancy2{grid-area: img2}
 #recipe3 , #fancy3 {grid-area: img3}
-#text1{grid-area: text1;grid-column: 1 / 4; display: grid; grid-template-columns:50% 50%; grid-template-areas: "us what"}
+#text1{grid-area: text1;grid-column: 1 / 4; display: grid; grid-template-columns:calc(50% - 25px) calc(50% - 25px); grid-template-areas: "us what"; grid-column-gap: 50px}
 
 #us{grid-area:us; display: grid; grid-template-columns:50% 50%; grid-template-rows: auto auto; grid-template-areas: "title title" "ilus textUs";grid-column-gap: 20px;}
 #what{grid-area:what; display: grid; grid-template-columns: 50% 50%; grid-template-rows: auto auto; grid-template-areas: "what1 what1" "what2 what3";grid-column-gap: 20px;margin-right: 25px;}
@@ -131,13 +132,14 @@ main h2 {text-align: center;font-family:'Pacifico', cursive; animation-name: a4;
 footer {
     height: auto;
     margin-top: 50px;
-    width: 100vw;
+    margin-right: 0px;
+    width: 100%;
     background-color: yellow;
     color: white;
     text-align: center;
     box-shadow: 16px 0px 18px 18px rgba(0,0,0,0.2);
     display: grid;
-    grid-template-columns:33.3vw 33.3vw 33.3vw; 
+    grid-template-columns:31% 31% 31%; 
     grid-template-areas: "social contact copyright"
 }
 footer h2{margin:0;color:black;font-family:'Pacifico', cursive;font-size: 12px}
@@ -179,3 +181,142 @@ input[type=submit]:hover {
     background-color: yellow;
 }
 /* <-------------------------------BUTTON ENDS HERE */
+/* Dropdown Mobile Navegation Bar #################START################### */
+#Alex-DropDownNav{display: none}
+#dropDownNav {
+    height: 50px;
+    width: 100vw;
+    background-color:gainsboro;
+    box-shadow: 0 10px 4px -4px rgba(0,0,0,0.3);
+}
+
+#dropDownContainer {
+    font-size: 18px;text-transform: capitalize; font-family:  'Pacifico', cursive;
+    width: 90vw;
+    height: 50px;
+    background-color:gainsboro;
+    color: white;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "a1 a2 a3";
+}
+#AlexNavLogo{grid-area: a1; color: black}
+
+#dropDownButton{
+    grid-area: a2;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black
+}
+#dropDownWrap{transition: all 0.5s ease-in}
+
+.dropDownMenu {background-color:  #f9f9f9;padding-top: 5px;padding-bottom: 5px;padding-top: 10px}
+.dropDownMenu ul{list-style: none;padding: 0;margin-top: 0px;margin-bottom: 5px;text-align: center;}
+.hidden{transform: translateY(-309px);}
+.show {transform: translateY(-60px); }
+.dropDownMenu li{width: 30vw;display: block;margin-left: auto;margin-right: auto;border-radius: 15px;margin-bottom: 5px; transition: all 0.3s ease-in-out;text-transform: capitalize; font-family:  'Pacifico', cursive;} 
+.dropDownMenu li:hover{animation-name:click;
+                        animation-duration: 0.6s;
+                        } 
+.dropDownMenu a {color: inherit; text-decoration: none}
+                        @keyframes click {
+                            0% {background-color:none;}
+                            50% {background-color: yellow;}
+                            100%{background-color: none}
+                        }          
+
+
+/* Dropdown Mobile Navegation Bar #################ENDS################### */
+#ing2-back{width: 20vw}
+#map{width:80%;height:450px;}
+
+/* MEDIAQUERIES START HERE################################# */
+@media  (max-width: 1024px) {
+    
+    
+    .navBar{grid-template-columns: 25vw 0vw auto 15vw auto auto 0vw}
+    .dropdown-content {
+        width: 15vw}
+    
+        .article-recipes{grid-template-columns: 100%; grid-template-rows: auto auto auto auto; grid-template-areas: "ing1" "ing2" "prep1"  "prep2"}
+#ing1 img{width: 35vw}
+#ing2-back{width: 80%}
+.wrap {padding-bottom: 25px}
+.article-recipes{margin-left:0px}
+.article-contact{width: 100%;grid-template-columns:50% auto;grid-column-gap: 10px}
+#contact3{width: 100%}
+input[type=text], select, textarea, input[type=email], input[type=tel], input[type=file] {display: block; margin-right: auto;margin-left: auto; width:80%}
+#map{width:80%;height:80%;}
+#contact2{align-items: center; grid-row-gap: 0px}    
+
+}
+
+
+
+@media  (max-width: 768px) {
+    
+.article-index{line-height: 1.5 em;margin-left: 30px;margin-top: 10px; margin-bottom: 30px;width:calc(100vw - 150px);color:black;min-height: calc(80vh); display:grid;grid-template-columns: 1fr 1fr; grid-template-rows:1fr 1fr 1fr 1fr ; grid-template-areas: "img1 img2" "img3 img3" "text1 text1" "text1 text1" ; grid-column-gap: 0px}   
+#text1{grid-area: text1;grid-column: 1 / 4; display: grid; grid-template-columns:calc(50% - 25px) calc(50% - 25px); grid-template-rows:50% 50%; grid-template-areas: "us us" "what what"}
+
+#us{grid-area:us; display: grid; grid-template-columns: calc(50% - 25px) calc(50% - 25px); grid-template-rows: 10vh  40vh; grid-template-areas: "title title" "ilus" "textUs";grid-column-gap: 20px;}
+#what{grid-area:what; display: grid; grid-template-columns: auto 50%; grid-template-rows: 20vh auto; grid-template-areas: "what1 what1" "what2 what3";grid-column-gap: 20px;margin-right: 25px;}
+
+
+.navBar{grid-template-columns: 25vw 0vw auto 15vw auto auto auto}
+#us h2 {grid-area: title} 
+#us-ilus{grid-area: ilus}
+#us-text{grid-area: textUs}
+#us-text {align-items: baseline}
+#what1{grid-area: what1}
+#what2{grid-area: what2;display:grid;align-items: center}
+#what3{grid-area: what3;display:grid;align-items: center}
+.dropdown-content {
+    width: 15vw}
+
+#ing1 {grid-template-columns: 100%; grid-template-rows: 50% 50%; grid-row-gap: 20px }
+#ing1 img{width: 50%}    
+.article-recipes{margin-left:0px}
+}
+
+
+@media  (max-width: 550px) {
+    
+    .article-index{line-height: 1.5 em;margin-left: 30px;margin-top: 10px; margin-bottom: 30px;width:calc(100vw - 95px);color:black;min-height: calc(80vh); display:grid;grid-template-columns: 1fr; grid-template-rows:auto auto auto auto auto; grid-template-areas: "img1" "img2" "img3" "text1" "text1"  ; grid-column-gap: 0px}
+    #text1{grid-area: text1;grid-column: 1 / 4; display: grid; grid-template-columns:calc(50% - 25px) calc(50% - 25px);; grid-template-rows:50% 50%; grid-template-areas: "us us" "what what"}
+    
+    #us{grid-area:us; display: grid; grid-template-columns: 100%; grid-template-rows: auto auto auto; grid-template-areas: "title" "ilus" "textUs";grid-column-gap: 20px;}
+    #what{grid-area:what; display: grid; grid-template-columns: 50% 50%; grid-template-rows: 30vh 30vh; grid-template-areas: "what1 what1" "what2 what3";grid-column-gap: 20px;margin-right: 25px;}
+   
+#recipe1, {grid-area: img1;height: auto}
+ #recipe2, {grid-area: img2; height: auto}
+ #recipe3 , {grid-area: img3;height: auto}
+
+
+ #us h2 {grid-area: title} 
+#us-ilus{grid-area: ilus}
+#us-text{grid-area: textUs; margin: 0px}
+#us-text {align-items: baseline}
+#what1{grid-area: what1}
+#what2{grid-area: what2;display:grid;align-items: center}
+#what3{grid-area: what3;display:grid;align-items: center}
+    
+    
+    .navBar{display: none}
+    #b1 , #b2 , #b3 , #b4 {display:none}
+    #Alex-DropDownNav{display: grid;position: fixed;z-index: 2;}
+    #ing1 img{width: 60%}      
+    .article-contact{grid-template-columns: 100%; grid-template-rows: auto auto auto; grid-template-areas: "contact1" "contact2" "contact3";grid-row-gap:10px  }
+    #contact2{grid-row-gap: 20px} 
+    .dropDownMenu li{width: 58vw}
+    .wrap{margin-left: 10px; margin-right:10px }
+
+    #t2{grid-template-columns: 100%; grid-template-rows: auto auto auto; grid-template-areas: "im1" "im2" "form"}
+    .article-urrecipe{width:calc(100vw - 95px)}
+}
+
+/* MEDIAQUERIES ENDS HERE############################### */

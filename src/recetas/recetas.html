@@ -6,13 +6,44 @@
     <title>Recipe Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
-   
-            <header>../
+            
+            <header>
+
+                <!-- Dropdown Mobile Navegation Bar #################START################### -->
+        <div id="Alex-DropDownNav">
+                <div id="dropDownWrap" class="hidden dropDownWrap">
+                        <div class="dropDownMenu" >
+                            <ul>
+                                    <li><a href="../index.html">Inicio</a></li>
+                                    <li><a href="../recetas/recetas.html">Recetas</a></li>
+                                    <li><a href="#">Carnes</a></li>   
+                                    <li><a href="#">Ensaladas</a> </li>
+                                    <li>  <a href="#">Postres</a> </li>
+                                    <li><a href="../contacto/contacto.html">Contacto</a></li>
+                                   <li><a href="../tuReceta/tuReceta.html">Sube tu receta</a></li>
+                            </ul>
+                        </div>
+                        <!-- starts navbar -->
+                        <div id="dropDownNav" class="dropDownNav">
+                            <div id="dropDownContainer">
+                                    <div id=AlexNavLogo>RecipeWebsite</div>
+                                <div id="dropDownButton"  onclick="openMenu()" class="dropdownB"><i class="fas fa-bars dropdownB"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ends navbar  -->
+                    </div>
+                </div>
+                    <!-- Dropdown Mobile Navegation Bar ##############END################# -->
+
+
+
+
                     <div class="navBar">    
                           <li id="logo"><a href="../index.html">Recipe Website</a></li>
                           <li id="b1"><a href="../index.html">Inicio</a></liid>
@@ -33,8 +64,8 @@
                             <h2>Orange Chicken</h2>
                     <article class="article-recipes">
                         <div id="ing1">
-                           <div><img src="ing1.jpeg" style="width: 20vw; display: block; margin-left: auto; margin-right: auto;border-radius: 15px"> </div>
-                           <div> <img src="ing2.jpg" style="width: 20vw; display: block; margin-left: auto; margin-right: auto;border-radius: 15px"> </div>
+                           <div><img src="ing1.jpeg" style=" display: block; margin-left: auto; margin-right: auto;border-radius: 15px"> </div>
+                           <div> <img src="ing2.jpg" style=" display: block; margin-left: auto; margin-right: auto;border-radius: 15px"> </div>
                           
                   
                          
@@ -44,7 +75,7 @@
                                 <h2>Ingredients</h2>
                             <p style="text-align: center">
                                 You will nedd:
-                                <div style="height:auto; width: 80%; background-color: white;padding-top:10px;padding-bottom:10px; border-radius: 15px; display: block;
+                                <div id ="ing2-back"style="height:auto; background-color: white;padding-top:10px;padding-bottom:10px; border-radius: 15px; display: block;
                                 margin-left: auto;
                                 margin-top: auto;margin-right: auto;" ><ul style="margin-left:10px">
                                 <li> Carbon</li>
@@ -55,7 +86,7 @@
                          </div>
                         
                          <div id="prep1">
-                                <div><img src="prep1.jpeg" style="width: 40vw; display: block; margin-left: auto; margin-right: auto;border-radius: 15px"> </div>
+                                <div><img src="prep1.jpeg" style="width: 80%; display: block; margin-left: auto; margin-right: auto;border-radius: 15px"> </div>
                                 
                             </div>
 

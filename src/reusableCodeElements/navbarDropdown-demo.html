@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="navbarDropdownStyle.css" />
+    <script src="navbarDropdownJS.js"></script>
+</head>
+
+<body>
+    <div id="dropDownMenu" class="hidden">
+        <ul>
+            <li>element1</li>
+            <li>element2</li>
+            <li>element3</li>
+        </ul>
+    </div>
+    <!-- starts navbar -->
+    <div id="dropDownNav">
+        <div id="dropDownContainer"><div id="dropDownButton" onmouseover="openMenu()">MENU</div></div>
+    </div>
+    <!-- ends navbar  -->
+
+</body>
+<style>
+    body {
+        margin: 0px
+    }
+
+    #dropDownNav {
+        height: 40px;
+        width: 100vw;
+        background-color: #222
+    }
+
+    #dropDownContainer {
+        width: 90vw;
+        height: 40px;
+        background-color: red;
+        color: white;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        text-align: center
+    }
+    #dropDownButton{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+   
+    #dropDownMenu {background-color: #888;padding-top: 5px;padding-bottom: 5px;}
+    #dropDownMenu ul{list-style: none;padding: 0;margin-top: 0px;margin-bottom: 5px;text-align: center;}
+    .show {display:block;}
+    .hidden{display: none}
+</style>
+<script>
+function openMenu() {
+    document.getElementById("dropDownMenu").classList.toggle("hidden");
+}
+
+
+
+
+</script>
+</html>

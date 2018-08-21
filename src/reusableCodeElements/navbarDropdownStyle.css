@@ -1,0 +1,42 @@
+body {
+    margin: 0px
+}
+
+#dropDownNav {
+    height: 60px;
+    width: 100vw;
+    background-color: #222
+}
+
+#dropDownContainer {
+    width: 90vw;
+    height: 60px;
+    background-color: #222;
+    color: white;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center
+}
+#dropDownButton{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#dropDownWrap{transition: all 0.5s ease-in}
+
+.dropDownMenu {background-color: #888;padding-top: 5px;padding-bottom: 5px;}
+.dropDownMenu ul{list-style: none;padding: 0;margin-top: 0px;margin-bottom: 5px;text-align: center;}
+.hidden{transform: translateY(-85px);}
+.show {transform: translateY(0px); }
+.dropDownMenu li{width: 30vw;display: block;margin-left: auto;margin-right: auto;border-radius: 15px;margin-bottom: 5px; transition: all 0.3s ease-in-out} 
+.dropDownMenu li:hover{animation-name:click;
+                        animation-duration: 0.6s;
+                        } 
+
+                        @keyframes click {
+                            0% {background-color:none;}
+                            50% {background-color: yellow;}
+                            100%{background-color: none}
+                        }          
+
