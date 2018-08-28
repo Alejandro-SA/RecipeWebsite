@@ -131,7 +131,7 @@ main h2 {text-align: center;font-family:'Pacifico', cursive; animation-name: a4;
 
 footer {
     height: auto;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-right: 0px;
     width: 100%;
     background-color: yellow;
@@ -140,7 +140,10 @@ footer {
     box-shadow: 16px 0px 18px 18px rgba(0,0,0,0.2);
     display: grid;
     grid-template-columns:31% 31% 31%; 
-    grid-template-areas: "social contact copyright"
+    grid-template-areas: "social contact copyright";
+    position: relative;
+    bottom: 0;
+    align-items: center;
 }
 footer h2{margin:0;color:black;font-family:'Pacifico', cursive;font-size: 12px}
 
@@ -281,6 +284,7 @@ input[type=text], select, textarea, input[type=email], input[type=tel], input[ty
 #ing1 {grid-template-columns: 100%; grid-template-rows: 50% 50%; grid-row-gap: 20px }
 #ing1 img{width: 50%}    
 .article-recipes{margin-left:0px}
+footer li {list-style: none; font-size: 12px}
 }
 
 
@@ -295,6 +299,7 @@ input[type=text], select, textarea, input[type=email], input[type=tel], input[ty
 #recipe1, {grid-area: img1;height: auto}
  #recipe2, {grid-area: img2; height: auto}
  #recipe3 , {grid-area: img3;height: auto}
+ footer li {list-style: none; font-size: 12px}
 
 
  #us h2 {grid-area: title} 
