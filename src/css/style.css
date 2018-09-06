@@ -262,6 +262,7 @@ input[type=text], select, textarea, input[type=email], input[type=tel], input[ty
 
 
 @media  (max-width: 768px) {
+ body{   background-size:auto 100vh}
     
 .article-index{line-height: 1.5 em;margin-left: 30px;margin-top: 10px; margin-bottom: 30px;width:calc(100vw - 150px);color:black;min-height: calc(80vh); display:grid;grid-template-columns: 1fr 1fr; grid-template-rows:1fr 1fr 1fr 1fr ; grid-template-areas: "img1 img2" "img3 img3" "text1 text1" "text1 text1" ; grid-column-gap: 0px}   
 #text1{grid-area: text1;grid-column: 1 / 4; display: grid; grid-template-columns:calc(50% - 25px) calc(50% - 25px); grid-template-rows:50% 50%; grid-template-areas: "us us" "what what"}
